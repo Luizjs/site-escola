@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('pixData').value = pixData;
 
     // Gera o QR Code (simulado)
-    const qrcodeUrl = `file:///C:/Users/luiz/Desktop/teste/frame.png`;
+    const qrcodeUrl = `frame.png`;
     document.getElementById('qrcode').src = qrcodeUrl;
 
     // Mostra o botão de editar se o pagamento for feito pelo Pix
