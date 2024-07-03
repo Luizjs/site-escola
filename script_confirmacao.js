@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pixData = `00020126330014BR.GOV.BCB.PIX011111943578656520400005303986540555.005802BR5920Luiz Gustavo Martins6009SAO PAULO62140510NKwRGpA0w66304139C`;
     document.getElementById('pixData').value = pixData;
 
-    const qrcodeUrl = 'frame.png';
+    const qrcodeUrl = "frame.png";
     document.getElementById('qrcode').src = qrcodeUrl;
 
     if (pagamento === 'Pix') {
