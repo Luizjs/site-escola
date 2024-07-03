@@ -1,0 +1,104 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background-color: #ffffff; /* fundo branco */
+    color: #000000; /* texto preto */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* centraliza o texto dentro do container */
+}
+
+h1 {
+    text-align: center;
+    color: #333333; /* título escuro */
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc; /* borda cinza */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%; /* largura total */
+    padding: 12px;
+    background-color: #8e44ad; /* roxo */
+    color: #ffffff; /* texto branco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #6c3483; /* tom mais escuro de roxo ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.button-spacing {
+    margin-top: 10px; /* Espaçamento entre os botões */
+}
+
+#confirmation {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#confirmation a {
+    color: #3498db; /* azul */
+    text-decoration: none;
+}
+
+#confirmation a:hover {
+    text-decoration: underline;
+}
+/* Estilos adicionais para a mensagem destacada */
+/* Estilos adicionais para a mensagem destacada */
+.mensagem-destacada {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #e67e22; /* Laranja */
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+/* Estilos para imagens de referência */
+#babylookImage, #normalImage {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#babylookImage img, #normalImage img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #cccccc; /* borda cinza */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

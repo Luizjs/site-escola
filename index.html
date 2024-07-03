@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Camisa do Interclasse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedido de Camisa do Interclasse</h1>
+        <form id="camisaForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="tipoCamisa">Tipo de Camisa:</label>
+            <select id="tipoCamisa" name="tipoCamisa" required>
+                <option value="Normal">Camiseta Normal</option>
+                <option value="BabyLook">Babylook</option>
+            </select>
+
+            <!-- Imagem de referência para Babylook -->
+            <div id="babylookImage" style="display: none;">
+                <img src="C:\Users\luiz\Desktop\teste\babylook_tamanhos.jpg.jpg" alt="Tamanhos de Babylook">
+            </div>
+
+            <!-- Imagem de referência para Camiseta Normal -->
+            <div id="normalImage" style="display: none;">
+                <img src="C:\Users\luiz\Desktop\teste\normal_tamanhos.jpg.jpg" alt="Tamanhos de Camiseta Normal">
+            </div>
+
+            <label for="tamanho">Tamanho da Camisa:</label>
+            <select id="tamanho" name="tamanho" required>
+                <optgroup label="Tamanhos Unissex">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </optgroup>
+                <optgroup label="Babylook">
+                    <option value="BabyLook P">Babylook P</option>
+                    <option value="BabyLook M">Babylook M</option>
+                    <option value="BabyLook G">Babylook G</option>
+                    <option value="BabyLook GG">Babylook GG</option>
+                    <option value="BabyLook XG">Babylook XG</option>
+                    <option value="BabyLook 3G">Babylook 3G</option>
+                    <option value="BabyLook 4G">Babylook 4G</option>
+                </optgroup>
+                <optgroup label="Tamanhos Especiais">
+                    <option value="XG">XG</option>
+                    <option value="3G">3G</option>
+                    <option value="4G">4G</option>
+                </optgroup>
+            </select>
+
+            <label for="nomeCamisa">Nome na Camisa:</label>
+            <input type="text" id="nomeCamisa" name="nomeCamisa" required>
+
+            <label for="numeroCamisa">Número na Camisa:</label>
+            <input type="number" id="numeroCamisa" name="numeroCamisa" required>
+
+            <label for="pagamento">Forma de Pagamento:</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+
+            <button type="submit" class="button-spacing">Enviar Pedido</button>
+        </form>
+        <p id="confirmation" style="display: none;">
+            Obrigado! <a href="confirmacao.html">Clique aqui para ver os detalhes do pagamento</a>.
+        </p>
+
+        <!-- Mensagem destacada -->
+        <div id="mensagemDestacada" class="mensagem-destacada" style="display: none;">
+            <p>Envie o comprovante de pagamento após clicar em "Enviar Detalhes pelo WhatsApp".</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

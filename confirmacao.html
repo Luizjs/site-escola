@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmação de Pedido</h1>
+        <p>O QR Code para pagamento e o código Pix para cópia foram gerados.</p>
+
+        <div id="pixSection">
+            <h2>QR Code Pix</h2>
+            <img src="" alt="QR Code" id="qrcode">
+            <p>Copie e cole o código Pix:</p>
+            <textarea id="pixData" rows="6" readonly></textarea>
+        </div>
+
+        <!-- Resumo do Pedido -->
+        <div id="pedidoInfo">
+            <h2>Resumo do Pedido</h2>
+            <p><strong>Nome:</strong> <span id="nome"></span></p>
+            <p><strong>Tamanho:</strong> <span id="tamanho"></span></p>
+            <p><strong>Nome na Camisa:</strong> <span id="nomeCamisa"></span></p>
+            <p><strong>Número na Camisa:</strong> <span id="numeroCamisa"></span></p>
+            <p><strong>Forma de Pagamento:</strong> <span id="pagamento"></span></p>
+        </div>
+
+        <!-- Botões -->
+        <button id="editarPedido" class="button-spacing">Editar Pedido</button>
+        <button id="enviarWhatsapp" class="button-spacing">Enviar Detalhes pelo WhatsApp</button>
+
+        <!-- Mensagem destacada -->
+        <div id="mensagemDestacada" class="mensagem-destacada" style="display: block;">
+            <p>Envie o comprovante de pagamento após clicar em "Enviar Detalhes pelo WhatsApp".</p>
+        </div>
+    </div>
+
+    <script src="script_confirmacao.js"></script>
+</body>
+</html>
