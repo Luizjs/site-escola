@@ -1,8 +1,7 @@
-/* Estilos gerais */
 body {
     font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-    background-color: #ffffff; /* fundo branco */
-    color: #000000; /* texto preto */
+    background-color: #ffffff; 
+    color: #000000; 
     margin: 0;
     padding: 0;
 }
@@ -10,16 +9,16 @@ body {
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #ffffff; /* fundo branco */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* centraliza o texto dentro do container */
+    text-align: center; 
 }
 
 h1 {
     text-align: center;
-    color: #333333; /* título escuro */
+    color: #333333; 
 }
 
 form {
@@ -35,16 +34,16 @@ input, select {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #cccccc; /* borda cinza */
+    border: 1px solid #cccccc; 
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 button {
-    width: 100%; /* largura total */
+    width: 100%; 
     padding: 12px;
-    background-color: #8e44ad; /* roxo */
-    color: #ffffff; /* texto branco */
+    background-color: #8e44ad; 
+    color: #ffffff; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -53,12 +52,12 @@ button {
 }
 
 button:hover {
-    background-color: #6c3483; /* tom mais escuro de roxo ao passar o mouse */
+    background-color: #6c3483;
     transform: scale(1.05);
 }
 
 .button-spacing {
-    margin-top: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px; 
 }
 
 #confirmation {
@@ -68,15 +67,13 @@ button:hover {
 }
 
 #confirmation a {
-    color: #3498db; /* azul */
+    color: #3498db; 
     text-decoration: none;
 }
 
 #confirmation a:hover {
     text-decoration: underline;
 }
-/* Estilos adicionais para a mensagem destacada */
-/* Estilos adicionais para a mensagem destacada */
 .mensagem-destacada {
     margin-top: 20px;
     padding: 10px;
@@ -85,11 +82,10 @@ button:hover {
     border-radius: 4px;
     text-align: center;
     font-size: 14px;
-    color: #e67e22; /* Laranja */
+    color: #e67e22; 
     font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
-/* Estilos para imagens de referência */
 #babylookImage, #normalImage {
     margin-top: 10px;
     text-align: center;
@@ -98,7 +94,7 @@ button:hover {
 #babylookImage img, #normalImage img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #cccccc; /* borda cinza */
+    border: 1px solid #cccccc; 
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
